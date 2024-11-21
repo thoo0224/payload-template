@@ -1,4 +1,5 @@
 import { GlobalConfig } from "payload"
+
 import { BUSINESS_SETTINGS_SLUG } from "../slugs"
 
 export const BusinessSettings: GlobalConfig = {

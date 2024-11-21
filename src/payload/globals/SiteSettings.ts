@@ -1,4 +1,5 @@
 import { GlobalConfig } from "payload"
+
 import { SITE_SETTINGS_SLUG } from "../slugs"
 
 export const SiteSettings: GlobalConfig = {

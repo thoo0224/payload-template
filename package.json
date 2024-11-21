@@ -39,11 +39,13 @@
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^4.3.0",
     "@types/node": "^22.5.4",
     "@types/react": "npm:types-react@19.0.0-rc.1",
     "@types/react-dom": "npm:types-react-dom@19.0.0-rc.1",
     "eslint": "^8",
     "eslint-config-next": "15.0.0",
+    "prettier-plugin-tailwindcss": "^0.6.9",
     "typescript": "5.6.3"
   },
   "engines": {
