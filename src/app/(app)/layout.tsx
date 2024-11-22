@@ -4,6 +4,8 @@ import { GeistSans } from "geist/font/sans"
 
 import Header from "./_components/header"
 
+export const dynamic = "force-dynamic"
+
 export default async function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   const siteSettings = await fetchSiteSettings()
 

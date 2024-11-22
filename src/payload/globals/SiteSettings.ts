@@ -1,3 +1,4 @@
+import { revalidateTag } from "next/cache"
 import { GlobalConfig } from "payload"
 
 import { SITE_SETTINGS_SLUG } from "../slugs"
@@ -13,4 +14,11 @@ export const SiteSettings: GlobalConfig = {
       defaultValue: "Default Title",
     },
   ],
+  hooks: {
+    afterChange: [
+      async () => {
+        revalidateTag(SITE_SETTINGS_SLUG)
+      },
+    ],
+  },
 }

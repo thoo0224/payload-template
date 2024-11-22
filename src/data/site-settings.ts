@@ -1,11 +1,17 @@
 import { getPayloadInstance } from "@/payload"
 import { SITE_SETTINGS_SLUG } from "@/payload/slugs"
+import { unstable_cache } from "next/cache"
 
-export async function fetchSiteSettings() {
+async function fetchSiteSettingsUncached() {
   const payload = await getPayloadInstance()
   const siteSettings = await payload.findGlobal({
     slug: SITE_SETTINGS_SLUG,
   })
 
+  console.log("Fetch")
   return siteSettings
 }
+
+export const fetchSiteSettings = unstable_cache(fetchSiteSettingsUncached, [], {
+  tags: [SITE_SETTINGS_SLUG],
+})
