@@ -1,11 +1,14 @@
-// storage-adapter-import-placeholder
+import "server-only"
+
+import path from "path"
+import sharp from "sharp"
+import { fileURLToPath } from "url"
+
 import { postgresAdapter } from "@payloadcms/db-postgres"
 import { payloadCloudPlugin } from "@payloadcms/payload-cloud"
 import { lexicalEditor } from "@payloadcms/richtext-lexical"
-import path from "path"
+
 import { buildConfig } from "payload"
-import sharp from "sharp"
-import { fileURLToPath } from "url"
 
 import { Media } from "./payload/collections/Media"
 import { Users } from "./payload/collections/Users"

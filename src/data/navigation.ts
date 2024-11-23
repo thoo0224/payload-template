@@ -1,6 +1,8 @@
-import { getPayloadInstance } from "@/payload"
 import { NAVIGATION_SLUG } from "@/payload/slugs"
+
 import { unstable_cache } from "next/cache"
+
+import { getPayloadInstance } from "@/payload"
 
 async function fetchNavigationSettingsUncached() {
   const payload = await getPayloadInstance()

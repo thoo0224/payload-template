@@ -1,6 +1,8 @@
-import { getPayloadInstance } from "@/payload"
 import { SITE_SETTINGS_SLUG } from "@/payload/slugs"
+
 import { unstable_cache } from "next/cache"
+
+import { getPayloadInstance } from "@/payload"
 
 async function fetchSiteSettingsUncached() {
   const payload = await getPayloadInstance()

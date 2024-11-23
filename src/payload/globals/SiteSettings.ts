@@ -1,4 +1,5 @@
 import { revalidateTag } from "next/cache"
+
 import { GlobalConfig } from "payload"
 
 import { SITE_SETTINGS_SLUG } from "../slugs"

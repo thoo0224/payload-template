@@ -1,4 +1,5 @@
 import { revalidateTag } from "next/cache"
+
 import { GlobalConfig } from "payload"
 
 import { NAVIGATION_SLUG } from "../slugs"
