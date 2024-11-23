@@ -10,6 +10,7 @@ import { fileURLToPath } from "url"
 import { Media } from "./payload/collections/Media"
 import { Users } from "./payload/collections/Users"
 import { BusinessSettings } from "./payload/globals/BusinessSettings"
+import { Navigation } from "./payload/globals/Navigation"
 import { SiteSettings } from "./payload/globals/SiteSettings"
 
 const filename = fileURLToPath(import.meta.url)
@@ -23,7 +24,7 @@ export default buildConfig({
     },
   },
   collections: [Users, Media],
-  globals: [SiteSettings, BusinessSettings],
+  globals: [SiteSettings, BusinessSettings, Navigation],
   editor: lexicalEditor(),
   secret: process.env.PAYLOAD_SECRET || "",
   typescript: {

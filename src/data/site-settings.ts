@@ -8,7 +8,6 @@ async function fetchSiteSettingsUncached() {
     slug: SITE_SETTINGS_SLUG,
   })
 
-  console.log("Fetch")
   return siteSettings
 }
 

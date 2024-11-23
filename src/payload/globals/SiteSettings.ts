@@ -15,10 +15,6 @@ export const SiteSettings: GlobalConfig = {
     },
   ],
   hooks: {
-    afterChange: [
-      async () => {
-        revalidateTag(SITE_SETTINGS_SLUG)
-      },
-    ],
+    afterChange: [() => revalidateTag(SITE_SETTINGS_SLUG)],
   },
 }
